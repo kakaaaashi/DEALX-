@@ -1,5 +1,0 @@
-DATABASE_URL=postgresql://dealx_db_user:b7pwQ5lj8PsviGf5NnDzf6ZEzU8mMyxm@dpg-d42aef3uibrs73cqscqg-a/dealx_db
-CLOUDINARY_CLOUD_NAME=dj1ldcjda
-CLOUDINARY_API_KEY=768128458791586
-CLOUDINARY_API_SECRET=c9Y3Hj0uhzAv6gjygiPCMBKWD-k
-PORT=10000
