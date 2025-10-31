@@ -1,0 +1,13 @@
+<%- include('layout', { body: `
+  <section class="section small">
+    <h3>Sell an item</h3>
+    <form action="/add" method="post" enctype="multipart/form-data" class="form">
+      <label>Item name</label><input name="name" required placeholder="e.g., Engineering Drawing Set">
+      <label>Price (₹)</label><input name="price" required placeholder="e.g., 350">
+      <label>Description</label><textarea name="description" placeholder="Condition, brand, notes..."></textarea>
+      <label>Contact (phone/email)</label><input name="contact" placeholder="9876543210 or email">
+      <label>Photo</label><input type="file" name="image" accept="image/*">
+      <div class="form-row"><button class="btn primary" type="submit">Post Listing</button> <a href="/items" class="btn ghost">Cancel</a></div>
+    </form>
+  </section>
+` }) %>

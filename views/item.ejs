@@ -1,0 +1,14 @@
+<%- include('layout', { body: `
+  <section class="section small">
+    <a href="/items" class="back">← Back to listings</a>
+    <div class="detail">
+      <div class="media"><img src="${item.image_url ? item.image_url : '/public/placeholder.jpg'}" alt="${item.name}"></div>
+      <div class="info">
+        <h1>${item.name}</h1>
+        <p class="price">₹${item.price}</p>
+        <p>${item.description}</p>
+        <p><strong>Contact:</strong> ${item.contact}</p>
+      </div>
+    </div>
+  </section>
+` }) %>

@@ -1,0 +1,16 @@
+<%- include('layout', { body: `
+  <section class="section">
+    <h3>All Listings</h3>
+    <div class="grid">
+      ${products.length ? products.map(p=>`
+        <article class="card">
+          <a class="media" href="/item/${p.id}"><img src="${p.image_url? p.image_url : '/public/placeholder.jpg'}" alt="${p.name}"></a>
+          <div class="card-body">
+            <h4 class="title"><a href="/item/${p.id}">${p.name}</a></h4>
+            <p class="muted">${(p.description||'').substring(0,140)}${(p.description||'').length>140?'...':''}</p>
+            <div class="row"><div class="price">₹${p.price}</div><a href="/item/${p.id}" class="btn small">View</a></div>
+          </div>
+        </article>`).join('') : `<div class="empty">No listings available.</div>`}
+    </div>
+  </section>
+` }) %>
